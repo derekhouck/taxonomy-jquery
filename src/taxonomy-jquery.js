@@ -299,7 +299,7 @@
       if(event.keyCode == 8 && $(taxonomy_jquery.addInput).val().length===0){
         taxonomy_jquery.toggleInputField(false);
         // Remove field
-        $(this).remove();
+        $(this).parent().remove();
         return false;
       }
     });
